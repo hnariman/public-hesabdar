@@ -1,22 +1,20 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-export const Card = () => {
-  return (
-    <Container>
-      <Top />
+const Card = () => (
+  <Container>
+    <Top />
 
-      <li>
-        <p> one </p>
-        <p> one </p>
-        <p> one </p>
-      </li>
-      <li> this is container </li>
-      <li> this is container </li>
-      <li> this is container </li>
-    </Container>
-  );
-};
+    <li>
+      <p> one </p>
+      <p> one </p>
+      <p> one </p>
+    </li>
+    <li> this is container </li>
+    <li> this is container </li>
+    <li> this is container </li>
+  </Container>
+);
 
 const Container = styled.ul`
   box-shadow: 1px 1px 7px grey;
@@ -32,10 +30,12 @@ const Container = styled.ul`
     flex-flow: row nowrap;
   }
 `;
-const Top = () => <TopContainer></TopContainer>;
+const Top = () => <TopContainer />;
 const TopContainer = styled.div`
   background: #cacaca;
   height: 20px;
   margin: -10px -20px;
   border-radius: 10px 10px 0 0;
 `;
+
+export default Card;
