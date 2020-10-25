@@ -13,9 +13,7 @@ import { Tab, Search } from 'semantic-ui-react';
 import Family from './components/Family.jsx';
 import Military from './components/Military.jsx';
 import NewGroup from './components/NewGroup.jsx';
-import WorkHistory from './components/WorkHistory.jsx';
 import FamilyForm from './components/FamilyForm.jsx';
-import Family2 from './components/Family2.jsx';
 import One from './components/One';
 
 const panes = [
@@ -44,14 +42,6 @@ const panes = [
     ),
   },
   {
-    menuItem: 'Family2',
-    render: () => (
-      <Tab.Pane>
-        <Family2 />
-      </Tab.Pane>
-    ),
-  },
-  {
     menuItem: 'Test',
     render: () => (
       <Tab.Pane>
@@ -72,14 +62,6 @@ const panes = [
     render: () => (
       <Tab.Pane>
         <NewGroup />
-      </Tab.Pane>
-    ),
-  },
-  {
-    menuItem: 'work History',
-    render: () => (
-      <Tab.Pane>
-        <WorkHistory />
       </Tab.Pane>
     ),
   },
